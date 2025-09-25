@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vienna Apartments - Find Your Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Vienna Apartments</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                <li><a href="#location" class="hover:text-blue-600">Location</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen bg-cover bg-center flex items-center" style="background-image: url('https://via.placeholder.com/1920x1080?text=Vienna+Cityscape');">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-5xl font-bold mb-4">Find Your Dream Apartment in Vienna</h2>
+            <p class="text-xl mb-8">Beautiful, modern homes in the heart of Vienna. Experience the best of Austrian living.</p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Why Choose Our Apartments?</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🏠</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Spacious Living</h4>
+                    <p>Generous room sizes with plenty of natural light and modern layouts.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🍳</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Modern Kitchens</h4>
+                    <p>Fully equipped kitchens with high-end appliances and contemporary design.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📍</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Prime Location</h4>
+                    <p>Located in the vibrant heart of Vienna, close to public transport and amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Discover Vienna</h3>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <p class="text-lg mb-4">Vienna, the capital of Austria, offers a perfect blend of history, culture, and modern living. Our apartments are situated in prime locations, giving you easy access to:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>St. Stephen's Cathedral</li>
+                        <li>Schönbrunn Palace</li>
+                        <li>Vienna State Opera</li>
+                        <li>Prater amusement park</li>
+                        <li>Excellent public transportation</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-300 h-64 flex items-center justify-center rounded-lg">
+                        <span class="text-gray-600">Map Placeholder - Vienna City Center</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Contact Us</h3>
+            <div class="max-w-md mx-auto">
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Vienna Apartments. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
